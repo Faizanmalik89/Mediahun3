@@ -1,0 +1,109 @@
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>Have questions, suggestions, or feedback? We'd love to hear from you. Fill out the form and our team will get back to you as soon as possible.</p>
+        
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@contenthub.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+1 234 567 8900</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Content Street, Digital City</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 9am to 5pm</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="What is this regarding?">
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<div class="map-section">
+    <h2 class="section-title">Our Location</h2>
+    <div class="map-container">
+        <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Map loading...</p>
+            <p class="map-note">Interactive map will be available soon.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        padding: 0 20px;
+    }
+    
+    .map-section {
+        padding: 0 20px 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .map-container {
+        margin-top: 30px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+    }
+    
+    .map-placeholder {
+        height: 400px;
+        background-color: #eef2f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--gray-color);
+    }
+    
+    .map-placeholder i {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .map-note {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .map-placeholder {
+            height: 250px;
+        }
+    }
+</style>

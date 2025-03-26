@@ -1,0 +1,57 @@
+<div class="blog-container">
+    <!-- Content will be populated dynamically by blogs.js -->
+</div>
+
+<style>
+    .blog-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        color: var(--gray-color);
+    }
+    
+    .loading i {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .no-content, .no-results {
+        text-align: center;
+        padding: 50px;
+        background-color: var(--white-color);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+    }
+    
+    .no-content i, .no-results i {
+        font-size: 3rem;
+        color: var(--gray-color);
+        margin-bottom: 20px;
+    }
+    
+    .error-message {
+        text-align: center;
+        padding: 30px;
+        background-color: #fff5f5;
+        border-left: 4px solid var(--danger-color);
+        border-radius: var(--radius);
+        color: var(--danger-color);
+    }
+    
+    .error-message i {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .back-btn {
+        margin-bottom: 30px;
+    }
+</style>

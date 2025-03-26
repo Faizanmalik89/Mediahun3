@@ -1,0 +1,71 @@
+<div class="video-container">
+    <!-- Content will be populated dynamically by videos.js -->
+</div>
+
+<style>
+    .video-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        color: var(--gray-color);
+    }
+    
+    .loading i {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .video-thumbnail {
+        position: relative;
+        background-color: #202020;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+    
+    .video-thumbnail:hover {
+        transform: scale(1.02);
+    }
+    
+    .video-thumbnail i {
+        font-size: 4rem;
+        color: white;
+        opacity: 0.8;
+        transition: var(--transition);
+    }
+    
+    .video-thumbnail:hover i {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    .video-thumbnail-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    .back-btn {
+        margin-bottom: 30px;
+    }
+    
+    .social-share {
+        display: flex;
+        gap: 10px;
+    }
+</style>

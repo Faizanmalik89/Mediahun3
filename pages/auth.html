@@ -1,0 +1,109 @@
+<div class="auth-container">
+    <div class="auth-tabs">
+        <div class="auth-tab active" id="sign-in-tab">Sign In</div>
+        <div class="auth-tab" id="sign-up-tab">Sign Up</div>
+    </div>
+    
+    <form id="sign-in-form" class="auth-form">
+        <h2>Welcome Back</h2>
+        <div class="form-group">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="signin-password">Password</label>
+            <input type="password" id="signin-password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <div class="form-footer">
+            <a href="#" id="forgot-password">Forgot Password?</a>
+        </div>
+        
+        <div class="auth-with-google">
+            <p>OR</p>
+            <button type="button" class="btn btn-google">
+                <i class="fab fa-google"></i> Sign in with Google
+            </button>
+        </div>
+    </form>
+    
+    <form id="sign-up-form" class="auth-form hidden">
+        <h2>Create Account</h2>
+        <div class="form-group">
+            <label for="signup-username">Username</label>
+            <input type="text" id="signup-username" name="username" placeholder="Choose a username" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" name="password" placeholder="Create a password" required minlength="6">
+        </div>
+        <div class="form-group">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <div class="form-footer">
+            Already have an account? <a href="#" onclick="toggleAuthForm('signin')">Sign In</a>
+        </div>
+        
+        <div class="auth-with-google">
+            <p>OR</p>
+            <button type="button" class="btn btn-google">
+                <i class="fab fa-google"></i> Sign up with Google
+            </button>
+        </div>
+    </form>
+</div>
+
+<style>
+    .auth-container {
+        max-width: 450px;
+        margin: 50px auto;
+        background-color: var(--white-color);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 40px;
+    }
+    
+    .user-account {
+        padding: 20px 0;
+    }
+    
+    .user-account h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .account-info {
+        background-color: #f5f7fa;
+        padding: 20px;
+        border-radius: var(--radius);
+        margin-bottom: 30px;
+    }
+    
+    .account-info p {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .account-info p:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .account-actions {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .account-actions button {
+        flex: 1;
+    }
+</style>
